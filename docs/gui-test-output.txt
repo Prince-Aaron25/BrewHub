@@ -1,0 +1,3 @@
+Schema ready. Existing rows preserved. No products or ingredients were inserted.
+Administrator created. Sign in with the email and password you entered.
+GUI smoke passed: login/register, all customer/admin tabs, cart submission, product edit, order workflow, report exports.

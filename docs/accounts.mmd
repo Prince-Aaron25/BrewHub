@@ -1,0 +1,29 @@
+classDiagram
+direction TB
+class User {
+    <<abstract>>
+    +int user_id
+    +str full_name
+    +str email
+    +str phone
+    +get_permissions()*
+    +can(permission) bool
+}
+class Customer {
+    +get_permissions() frozenset
+}
+class Admin {
+    +get_permissions() frozenset
+}
+class AuthService {
+    +register(name, email, phone, password)
+    +login(email, password) User
+}
+class Service {
+    +User user
+    +tx(permission, write)
+}
+User <|-- Customer
+User <|-- Admin
+AuthService ..> User : returns
+Service --> User : checks permissions

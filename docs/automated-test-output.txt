@@ -1,0 +1,39 @@
+test_cancel_uses_original_stock_snapshot (test_integration.IntegrationTests.test_cancel_uses_original_stock_snapshot) ... ok
+test_concurrent_confirmation_deducts_once (test_integration.IntegrationTests.test_concurrent_confirmation_deducts_once) ... ok
+test_customer_can_only_cancel_own_pending (test_integration.IntegrationTests.test_customer_can_only_cancel_own_pending) ... ok
+test_customer_order_history_is_private (test_integration.IntegrationTests.test_customer_order_history_is_private) ... ok
+test_duplicate_email_and_wrong_password (test_integration.IntegrationTests.test_duplicate_email_and_wrong_password) ... ok
+test_duplicate_submission_and_confirmation (test_integration.IntegrationTests.test_duplicate_submission_and_confirmation) ... ok
+test_failure_mid_confirmation_rolls_back_every_change (test_integration.IntegrationTests.test_failure_mid_confirmation_rolls_back_every_change) ... ok
+test_full_cash_workflow_and_report (test_integration.IntegrationTests.test_full_cash_workflow_and_report) ... ok
+test_full_refund_excluded_from_sales (test_integration.IntegrationTests.test_full_refund_excluded_from_sales) ... ok
+test_gcash_reference_reuse_rejected (test_integration.IntegrationTests.test_gcash_reference_reuse_rejected) ... ok
+test_history_prevents_deletion (test_integration.IntegrationTests.test_history_prevents_deletion) ... ok
+test_insufficient_stock_leaves_pending (test_integration.IntegrationTests.test_insufficient_stock_leaves_pending) ... ok
+test_migration_rerun_preserves_rows (test_integration.IntegrationTests.test_migration_rerun_preserves_rows) ... ok
+test_missing_recipe_and_stock_validation (test_integration.IntegrationTests.test_missing_recipe_and_stock_validation) ... ok
+test_no_completion_without_payment (test_integration.IntegrationTests.test_no_completion_without_payment) ... ok
+test_payment_duplicate_underpayment_and_refund (test_integration.IntegrationTests.test_payment_duplicate_underpayment_and_refund) ... ok
+test_permissions_and_inactive_session (test_integration.IntegrationTests.test_permissions_and_inactive_session) ... ok
+test_prepared_cancel_does_not_restore (test_integration.IntegrationTests.test_prepared_cancel_does_not_restore) ... ok
+test_price_snapshot_and_requote (test_integration.IntegrationTests.test_price_snapshot_and_requote) ... ok
+test_profile_and_password_change (test_integration.IntegrationTests.test_profile_and_password_change) ... ok
+test_report_export_and_invalid_dates (test_integration.IntegrationTests.test_report_export_and_invalid_dates) ... ok
+test_two_orders_compete_for_stock (test_integration.IntegrationTests.test_two_orders_compete_for_stock) ... ok
+test_populated_screenshot_schema_preserved (test_migration.MigrationTests.test_populated_screenshot_schema_preserved) ... ok
+test_abstract_user_cannot_be_instantiated (test_models.ModelTests.test_abstract_user_cannot_be_instantiated) ... ok
+test_amount_validation (test_models.ModelTests.test_amount_validation) ... ok
+test_cash_change_and_underpayment (test_models.ModelTests.test_cash_change_and_underpayment) ... ok
+test_email_normalization (test_models.ModelTests.test_email_normalization) ... ok
+test_gcash_reference_and_exact_amount (test_models.ModelTests.test_gcash_reference_and_exact_amount) ... ok
+test_low_stock_boundary (test_models.ModelTests.test_low_stock_boundary) ... ok
+test_order_owns_items_and_exact_total (test_models.ModelTests.test_order_owns_items_and_exact_total) ... ok
+test_order_rejects_invalid_quantities (test_models.ModelTests.test_order_rejects_invalid_quantities) ... ok
+test_order_rejects_unavailable_product (test_models.ModelTests.test_order_rejects_unavailable_product) ... ok
+test_password_hash_verification (test_models.ModelTests.test_password_hash_verification) ... ok
+test_polymorphic_permissions (test_models.ModelTests.test_polymorphic_permissions) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 9.777s
+
+OK

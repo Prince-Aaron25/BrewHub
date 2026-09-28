@@ -1,0 +1,33 @@
+classDiagram
+direction TB
+class Ingredient {
+    +int ingredient_id
+    +str ingredient_name
+    +Decimal quantity
+    +str unit
+    +Decimal reorder_level
+    +is_low() bool
+}
+class InventoryService {
+    +ingredients(low_only)
+    +save_ingredient(name, unit, reorder, ingredient_id)
+    +adjust(ingredient_id, kind, quantity, reason)
+    +history()
+    +delete_ingredient(ingredient_id)
+}
+class CatalogService {
+    +categories()
+    +save_category(name, category_id)
+    +products(search, category_id, include_unavailable)
+    +save_product(name, category_id, description, price, image_path, available, product_id)
+    +recipe(product_id)
+    +save_recipe_line(product_id, ingredient_id, quantity)
+    +remove_recipe_line(product_id, ingredient_id)
+}
+class OrderService {
+    +confirm(order_id)
+    +cancel(order_id, reason)
+}
+InventoryService ..> Ingredient : calculates low stock
+CatalogService ..> Ingredient : recipe data
+OrderService ..> Ingredient : consumes stock

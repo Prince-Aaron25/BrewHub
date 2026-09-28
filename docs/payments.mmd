@@ -1,0 +1,19 @@
+classDiagram
+direction TB
+class Payment {
+    <<abstract>>
+    +validate(total, tendered, reference)*
+}
+class CashPayment {
+    +validate(total, tendered, reference) Decimal
+}
+class GCashPayment {
+    +validate(total, tendered, reference) Decimal
+}
+class PaymentService {
+    +record(order_id, method, tendered, reference) Decimal
+    +refund(order_id, reason) Decimal
+}
+Payment <|-- CashPayment
+Payment <|-- GCashPayment
+PaymentService ..> Payment : validates through same method

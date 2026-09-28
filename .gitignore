@@ -1,0 +1,8 @@
+config_local.py
+__pycache__/
+*.pyc
+.venv/
+reports/*.pdf
+reports/*.csv
+logs/
+

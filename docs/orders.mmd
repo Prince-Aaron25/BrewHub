@@ -1,0 +1,33 @@
+classDiagram
+direction TB
+class Product {
+    +int product_id
+    +str product_name
+    +Decimal price
+    +bool availability
+}
+class Order {
+    -list _items
+    +items tuple
+    +add_item(product, quantity)
+    +calculate_total() Decimal
+}
+class OrderItem {
+    +int product_id
+    +str product_name
+    +int quantity
+    +Decimal unit_price
+    +subtotal() Decimal
+}
+class OrderService {
+    +quote(cart) Order
+    +place_order(cart, request_token, expected_total) int
+    +list_orders(status)
+    +details(order_id)
+    +confirm(order_id)
+    +advance(order_id)
+    +cancel(order_id, reason)
+}
+Order "1" *-- "0..*" OrderItem : owns
+Order ..> Product : copies price and name
+OrderService ..> Order : builds validated order
