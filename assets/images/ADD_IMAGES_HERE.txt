@@ -1,8 +1,0 @@
-YOUR PRODUCT PICTURES:
-Use Admin > Products > Choose picture for selected product.
-The app copies your image into this folder and saves the path in MySQL.
-You can also copy images here yourself and set Image path to assets/images/filename.png.
-All paths are resolved relative to this project folder.
-Your old logo can be copied here as logo.png and added to the UI later.
-No image is required to run the application.
-
