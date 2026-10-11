@@ -2,5 +2,5 @@
 from app import BrewHubApp
 
 if __name__ == "__main__":
-    BrewHubApp().mainloop()
+    BrewHubApp().mainloop() 
 
